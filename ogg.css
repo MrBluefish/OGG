@@ -41,6 +41,7 @@ nav a {
   display: flex;
   flex-direction: row;
   padding: 15px 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none;
   color: darkgrey;
   justify-content: center;
