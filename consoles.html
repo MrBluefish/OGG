@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Old and Grey Gamers - Consoles</title>
+  <link rel="stylesheet" href="./consoles.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar-container">
+      <ul class="left-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./consoles.html" id="consoles-link">Consoles</a></li>
+      </ul>
+      <img src="https://rebrand.ly/d175df" alt="ogg label" style="flex-shrink: 0">
+      <ul class="right-menu">
+        <li><a href="#beastsofbourbon">Beasts of Bourbon</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="consoles-dropdown" style="display:block;">
+      <ul>
+        <li><a href="#">Nintendo Switch</a></li>
+        <li><a href="#">PlayStation 5</a></li>
+        <li><a href="#">Xbox Series X/S</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const consolesLink = document.getElementById('consoles-link');
+    const consolesDropdown = document.getElementById('consoles-dropdown');
+  
+    consolesLink.addEventListener('mouseover', () => {
+      consolesDropdown.style.display = 'block';
+      consolesDropdown.style.left = consolesLink.offsetLeft + 'px';
+      consolesDropdown.style.top = consolesLink.offsetTop + consolesLink.offsetHeight + 'px';
+    });
+  
+    consolesLink.addEventListener('mouseout', () => {
+      consolesDropdown.style.display = 'none';
+    });
+  </script>
+  
+  <h1>Consoles</h1>
+</body>  
+</html>
